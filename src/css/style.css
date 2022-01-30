@@ -1,0 +1,164 @@
+@font-face {
+  font-family: "D-Din";
+  src: url("./../fonts/D-DINCondensed.otf");
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  font-family: "D-Din";
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-image: linear-gradient(
+    to right bottom,
+    rgb(255, 94, 36),
+    rgb(246, 109, 59)
+  );
+}
+
+.sign {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  background-color: white;
+  box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+  width: 70%;
+  padding: 1rem;
+  max-width: 100rem;
+}
+
+.sign__col {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sign__title {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+  display: block;
+  font-weight: bold;
+}
+
+.sign__name {
+  line-height: 0.9;
+  margin-bottom: 0.5rem;
+}
+
+.sign__firstname {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.sign__firstname::after {
+  content: "\a";
+  white-space: pre;
+}
+
+.sign__lastname {
+  font-weight: 100;
+  font-size: 4.5rem;
+}
+
+.sign__role {
+  font-weight: 700;
+}
+
+.sign__company {
+  margin-top: 2rem;
+}
+
+.sign__company-logo {
+  height: 7rem;
+}
+
+.sign__contact-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  border-left: 2px solid orangered;
+  padding: 1.8rem;
+}
+
+.sign__contact-item:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.sign__contact-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.sign__contact-description {
+  font-size: 1.4rem;
+  margin-left: 1rem;
+  color: black;
+}
+
+.sign__contact-icon {
+  width: 2rem;
+  height: 2rem;
+  fill: orangered;
+}
+
+.sign__product-list {
+  list-style-type: none;
+  padding: 0.5rem;
+}
+
+.sign__product-img {
+  height: 4rem;
+}
+
+.sign__product-item {
+  border-left: 2px solid orangered;
+  padding-left: 1rem;
+}
+
+.sign__product-item:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.sign__contact-list--products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  border: 0;
+  width: 80%;
+}
+
+.sign__contact-list--products .sign__contact-description {
+  font-size: 1.3rem;
+  margin-left: 0.5rem;
+}
+
+.sign__contact-list--products .sign__contact-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+@media screen and (max-width: 882px) {
+  .sign {
+    width: 30rem;
+  }
+}
