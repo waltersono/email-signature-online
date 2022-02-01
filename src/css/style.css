@@ -1,6 +1,18 @@
 @font-face {
-  font-family: "D-Din";
-  src: url("./../fonts/D-DINCondensed.otf");
+  font-family: "GothamThin";
+  src: url("./../fonts/gotham/Gotham-Thin.otf");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "GothamBold";
+  src: url("./../fonts/gotham/GothamBold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "GothamLight";
+  src: url("./../fonts/gotham/GothamLight.ttf");
 }
 
 *,
@@ -13,21 +25,11 @@
 
 html {
   font-size: 62.5%;
-  height: 100%;
 }
 
 body {
-  font-family: "D-Din";
+  font-family: "GothamLight";
   font-size: 1.6rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  background-image: linear-gradient(
-    to right bottom,
-    rgb(255, 94, 36),
-    rgb(246, 109, 59)
-  );
 }
 
 .sign {
@@ -61,8 +63,8 @@ body {
 }
 
 .sign__firstname {
-  font-weight: bold;
   font-size: 3rem;
+  font-family: "GothamBold";
 }
 
 .sign__firstname::after {
@@ -71,8 +73,8 @@ body {
 }
 
 .sign__lastname {
-  font-weight: 100;
   font-size: 4.5rem;
+  font-family: "GothamThin";
 }
 
 .sign__role {
